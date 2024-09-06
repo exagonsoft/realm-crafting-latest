@@ -1,0 +1,150 @@
+.workshops_layout_container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.section_title {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 4rem;
+}
+
+.grid_loading_container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 9px;
+    min-height: 28rem;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.grid_containers {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-row-gap: 5rem;
+    grid-column-gap: 2rem;
+    justify-content: center;
+    width: 100%;
+}
+
+.nftCard {
+    border-radius: 40px;
+    max-width: 440px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: flex-start;
+    min-height: 28rem;
+    min-width: 300px;
+    position: relative;
+    box-shadow: 4px 4px 10px #000000b8;
+}
+
+.nftHomeCard {
+    border-radius: 40px;
+    max-width: 440px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: flex-start;
+    min-height: 380px;
+    min-width: 300px;
+    position: relative;
+    box-shadow: 4px 4px 10px #000000b8;
+}
+
+.building_texts_info_wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: .5rem 1rem;
+}
+
+.building_texts {
+    padding: 1rem .8rem 4rem .8rem;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 100;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.building_texts>h4 {
+    display: flex;
+    padding: 0.4rem 2rem;
+    background: linear-gradient(355deg, #2b2c2dde, #383a3b);
+    border-radius: 9px;
+    margin-block: 0;
+    min-width: 80%;
+    margin-top: 0.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.building_texts_info_container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(355deg, #2b2c2dde, #383a3b);
+    border-radius: 9px;
+    padding: .2rem .5rem;
+}
+
+
+.owned_buildings_text_info_container {
+    width: 80%;
+    padding: .5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(355deg, #2b2c2dde, #383a3b);
+    border-radius: 9px;
+    margin-block: 0;
+    margin: 0 2rem;
+    position: relative;
+}
+
+.owned_buildings_text_info_container>img {
+    width: 20px;
+    height: 20px;
+    animation: coinLeft 1s infinite linear;
+    position: absolute;
+    right: 0;
+    z-index: 15;
+}
+
+.owned_buildings_text_info_container>span {
+    position: relative;
+    z-index: 20;
+}
+
+.coin_image {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+.nft_card_ui {
+    width: 100%;
+    height: 100%;
+    min-height: 28rem;
+    position: absolute;
+    background-repeat: round;
+    z-index: 92;
+  }

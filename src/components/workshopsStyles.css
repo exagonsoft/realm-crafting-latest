@@ -1,0 +1,201 @@
+.business_section {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.businessContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    padding: 2rem;
+    margin: 10px 0;
+    width: 100%;
+}
+
+.building_texts {
+    padding: 1rem .8rem 4rem .8rem;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 100;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.building_texts>h4 {
+    display: flex;
+    padding: 0.4rem 2rem;
+    background: linear-gradient(355deg, #2b2c2dde, #383a3b);
+    border-radius: 9px;
+    margin-block: 0;
+    min-width: 80%;
+    margin-top: 0.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.building_texts_info_wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: .5rem 1rem;
+}
+
+.building_texts_info_container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(355deg, #2b2c2dde, #383a3b);
+    border-radius: 9px;
+    padding: .2rem .5rem;
+}
+
+.owned_buildings_text_info_container {
+    width: 80%;
+    padding: .5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(355deg, #2b2c2dde, #383a3b);
+    border-radius: 9px;
+    margin-block: 0;
+    margin: 0 2rem;
+    position: relative;
+}
+
+.owned_buildings_text_info_container>img {
+    width: 20px;
+    height: 20px;
+    animation: coinLeft 1s infinite linear;
+    position: absolute;
+    right: 0;
+    z-index: 15;
+}
+
+.owned_buildings_text_info_container>span {
+    position: relative;
+    z-index: 20;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes coinLeft {
+    0% {
+        margin-right: -.5rem;
+        transform: rotate(0deg) scale(0);
+        opacity: 0;
+    }
+
+    10% {
+        margin-right: 0rem;
+        transform: rotate(-45deg) scale(.1);
+        opacity: 1;
+    }
+
+    90% {
+        margin-right: 1.2;
+        transform: rotate(-350deg) scale(.9);
+        opacity: 1;
+    }
+
+    100% {
+        margin-right: 1.5rem;
+        transform: rotate(-360deg) scale(1);
+        opacity: 0;
+    }
+}
+
+.nftCard {
+    border-radius: 40px;
+    max-width: 440px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: flex-start;
+    min-height: 30rem;
+    min-width: 300px;
+    position: relative;
+    box-shadow: 4px 4px 10px #000000b8;
+}
+
+.nftHomeCard {
+    border-radius: 40px;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: flex-start;
+    min-height: 400px;
+    min-width: 300px;
+    position: relative;
+    box-shadow: 4px 4px 10px #000000a6;
+}
+
+.nftHomeCardButton {
+    background: linear-gradient(176deg, #f1a61e, #533d0e) !important;
+    color: white !important;
+    cursor: pointer !important;
+    transition: background-color 0.3s !important;
+    position: absolute !important;
+    min-width: 50% !important;
+    min-height: 8% !important;
+    z-index: 115 !important;
+}
+
+.nftHomeCardButton_jewel {
+    background: url(/images/card_info_jewel.png);
+    background-size: contain;
+    position: absolute;
+    top: -.5rem;
+    left: -.5rem;
+    z-index: 115;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+}
+
+.nft_owned_card_ui {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-repeat: round;
+    z-index: 92;
+}
+
+
+.grid {
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
